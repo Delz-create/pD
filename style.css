@@ -1,0 +1,130 @@
+@font-face {
+    font-family: roboto;
+    src: url(Assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    block-size: border-box;
+    /* border: 1px red solid; */
+}
+body{
+    font-family: roboto;
+    margin: 10px 50px;
+    max-height: 100vh;
+}
+
+:root {
+    --maincolor: #4a07db;
+    --maincolor-alt: #5e87f9;
+    --blacks: #000000;
+    --grey: #dbdde2;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-logo{
+    display: flex;
+    align-items: center;
+}
+.header .header-logo p{
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin: 0 0 0 .3rem;
+}
+
+.header .header-links{
+    display: flex;
+    align-items: center;
+}
+.header .header-links a{
+    text-decoration: none;
+    color: var(
+        --blacks
+    );
+    font-size: 14px;
+    margin: 0 0 0 1.5rem;
+    font-weight: 550;
+}
+.projects, 
+.careers{
+    display: flex;
+    align-items: center;
+}
+.projects-icon,
+.careers-icon{
+    margin-left: .2rem;
+}
+.projects-icon:hover,
+.careers-icon:hover{
+    rotate: 180deg;
+    transition: .8s ease-out;
+}
+.header-button .header-button_button{
+    padding: 11px 15px;
+    background-color: var(--maincolor);
+    color: var(--grey);
+    font-family: roboto;
+    font-weight: 700;
+    border: none;
+}
+.header-button .header-button_button:hover{
+    background-color: var(--grey);
+    color: var(--blacks);
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+
+.hero{
+    margin: 80px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+.hero .hero-aside{
+    margin: 0 50px 0 0;
+}
+.hero .hero-aside .hero-header p{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0rem;
+}
+.hero .hero-aside .hero-content p{
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 1.5rem 0rem;
+}
+
+.hero-buttons .blue{
+    padding: 11px 15px;
+    background-color: var(--maincolor);
+    color: var(--grey);
+    font-family: roboto;
+    font-weight: 700;
+    border: none;
+}
+.hero-buttons .blue:hover{
+    background-color: var(--grey);
+    color: var(--blacks);
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+.hero-buttons .white{
+    padding: 11px 15px;
+    background-color: var(--grey);
+    color: var(--maincolor-alt);
+    font-family: roboto;
+    font-weight: 700;
+    margin-left: 5px;
+    border: none;
+}
+.hero-buttons .white:hover{
+    background-color: var(--maincolor);
+    color: var(--grey);
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
